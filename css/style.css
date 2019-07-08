@@ -73,6 +73,14 @@ body {
   background-color: transparent;
 }
 
+.button-o-fitting {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #507fe1;
+  background-color: #fff;
+  border: 0;
+}
+
 .button {
   border: none;
   text-transform: uppercase;
@@ -448,5 +456,27 @@ input[type="checkbox"]:checked + label:before {
         flex-basis: 100%;
     margin-bottom: 50px;
   }
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  min-width: 570px;
+  position: relative;
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  buttom: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
