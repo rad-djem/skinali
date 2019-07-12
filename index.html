@@ -7,6 +7,7 @@
 	<title>Фабрика скинали</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 			<div class="container">
 				<nav class="menu__nav">
 					<a href="#" class="menu__link">Главная</a>
-					<a href="#" class="menu__link">Продукция</a>
+					<a href="#features" class="menu__link">Продукция</a>
 					<a href="#" class="menu__link">Каталог</a>
 					<a href="#" class="menu__link">Примеры работ</a>
 					<a href="#" class="menu__link">Примерка изображений</a>
@@ -45,7 +46,7 @@
 						<a class="navbar__phone" href="tel:+74991234567">+7 499 23-45-67</a>
 						<a class="navbar__email navbar__small-text" href="mailto:info@mail.ru">info@mail.ru</a>
 					</div>
-					<button class="button-o navbar__button">Получить консультацию</button>
+					<a href="#offer" class="button-o navbar__button">Получить консультацию</a>
 				</div>
 				<!-- /.navbar-wrap -->
 			</div>
@@ -58,7 +59,7 @@
 					Гарантия<br>минимальные цены<br>на скинали
 				</h1>
 				<span class="hero__subtitle">от 3000 р/м<sup>2</sup></span>
-				<button class="button hero__button">Заказать скинали</button>
+				<a href="#offer" class="button hero__button">Заказать скинали</a>
 			</div>
 		</div>
 		<!-- /.hero -->
@@ -66,7 +67,7 @@
 	<!-- /.header -->
 
 	<main> 
-		<section class="offer bg-secondary">
+		<section class="offer bg-secondary" id="offer">
 			<div class="container">
 				<div class="offer__block offer-block offer-block__calc-bg">
 					<h2 class="offer__title">Оставьте заявку на расчет</h2>
@@ -76,7 +77,14 @@
 						<div class="form__row">
 							<div class="form__group">
 								<label for="" class="form__label">Вид стекла</label>
-								<input type="text" class="input form__input">
+								<input type="hidden" name="type" id="select-type" value="С печатью">
+								<div class="select form__select">
+									<div class="select_checked">С печатью</div>
+									<ul class="select__dropdown">
+										<li class="select__option" data-value="С печатью">С печатью</li>
+										<li class="select__option" data-value="Без печати">Без печати</li>
+									</ul>
+								</div>
 							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Ширина, см</label>
@@ -113,7 +121,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.offer -->
-		<section class="features section">
+		<section class="features section" id="features">
 			<div class="container">
 				<h2 class="section-title section__title">Наши преимущества</h2>
 				<div class="features-block">
@@ -435,6 +443,48 @@
 			<!-- /.container -->
 		</section>
 
+
+
+		<section class="section before">
+			<div class="container">
+				<h2 class="section-title section__title">До и после</h2>
+				<div class="before-slider-wrap">
+					<div class="before-slider">
+						<div class="before-slider__item">
+							<div class="before-after">
+								<img src="img/before-slider/sample-before.png" alt="">
+								<img src="img/before-slider/sample-after.png" alt="">
+							</div>
+						</div>
+						<div class="before-slider__item">
+							<div class="before-after">
+								<img src="img/before-slider/sample-before.png" alt="">
+								<img src="img/before-slider/sample-after.png" alt="">
+							</div>
+						</div>
+						<div class="before-slider__item">
+							<div class="before-after">
+								<img src="img/before-slider/sample-before.png" alt="">
+								<img src="img/before-slider/sample-after.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="before-slider-arrows">
+						<button class="arrow arrow-left">
+							<img src="img/before-slider/arrows/left.png" alt="">
+						</button>
+						<button class="arrow arrow-right">
+							<img src="img/before-slider/arrows/right.png" alt="">
+						</button>
+					</div>
+				</div>
+				<!-- /.before-slider-wrap -->
+			</div>
+		</section>
+
+
+
+
 		<section class="section reviews">
 			<div class="container">
 				<h2 class="section-title section__title">
@@ -580,9 +630,61 @@
 				lang=ru_RU&amp;scroll=false">
 			</script>
 		</div>
+		<section class="section questions">
+			<div class="container">
+				<div class="questions-block">
+					<h3 class="questions__title">Остались вопросы?</h3>
+					<a href="#" class="questions__link">Задайте их менеджеру</a>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<div class="footer__description">
+					<h4 class="footer__title">Фабрика скинали №1</h4>
+					<span class="footer__subtitle">ведущий производитель скинали</span>
+					<span class="footer__copy">© Фабрика скинали №1</span>
+				</div>
+				<!-- /.footer__description -->
+				<div class="footer__pay-info">
+					<img src="img/pay/pay-1.png" alt="" class="footer__pay-logo">
+					<img src="img/pay/pay-2.png" alt="" class="footer__pay-logo">
+					<img src="img/pay/pay-3.png" alt="" class="footer__pay-logo">
+					<img src="img/pay/pay-4.png" alt="" class="footer__pay-logo">
+				</div>
+				<!-- /.footer__pay-info -->
+				<div class="footer__contacts">
+					<a href="#" class="footer__phone">+7 499 123-45-67</a>
+					<a href="#" class="footer__mail">info@mail.ru</a>
+					<div class="footer-social">
+						<a href="#" class="footer-social__link">
+							<img src="img/social_icon/facebook.png" alt="">
+						</a>
+						<a href="#" class="footer-social__link">
+							<img src="img/social_icon/twitter.png" alt="">
+						</a>
+						<a href="#" class="footer-social__link">
+							<img src="img/social_icon/vkontakte.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- /.footer__contacts -->
+			</div>
+			<!-- /.footer-block -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
 	
 	<!-- Подключени виджета обратной связи на сайте -->
-    <script type="text/javascript" src="https://spikmi.com/Widget?Id=1267"></script>
+	<script type="text/javascript" src="https://spikmi.com/Widget?Id=1267"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.event.move.js"></script>
+	<script src="js/jquery.twentytwenty.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
