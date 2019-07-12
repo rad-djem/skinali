@@ -15,13 +15,13 @@
 		<div class="menu">
 			<div class="container">
 				<nav class="menu__nav">
-					<a href="#" class="menu__link">Главная</a>
-					<a href="#features" class="menu__link">Продукция</a>
-					<a href="#" class="menu__link">Каталог</a>
-					<a href="#" class="menu__link">Примеры работ</a>
-					<a href="#" class="menu__link">Примерка изображений</a>
-					<a href="#" class="menu__link">стоимость дилерам</a>
-					<a href="#" class="menu__link">о скинали</a>
+					<a href="#first__menu" class="menu__link">Главная</a>
+					<a href="#features" class="menu__link">Наши преимущества</a>
+					<a href="#catalog" class="menu__link">Каталог</a>
+					<a href="#price" class="menu__link">Продукция</a>
+					<a href="#section-blog" class="menu__link">Примерка изображений</a>
+					<a href="#offersecondary" class="menu__link">стоимость дилерам</a>
+					<a href="#factory" class="menu__link">о скинали</a>
 				</nav>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 			<!-- /.container -->
 		</div>
 		<!-- /.navbar -->
-		<div class="hero">
+		<div class="hero" id="first__menu">
 			<div class="container">
 				<h1 class="hero__title">
 					Гарантия<br>минимальные цены<br>на скинали
@@ -67,7 +67,7 @@
 	<!-- /.header -->
 
 	<main> 
-		<section class="offer bg-secondary" id="offer">
+		<section class="offer bg-secondary">
 			<div class="container">
 				<div class="offer__block offer-block offer-block__calc-bg">
 					<h2 class="offer__title">Оставьте заявку на расчет</h2>
@@ -88,11 +88,11 @@
 							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Ширина, см</label>
-								<input type="text" class="input form__input">
+								<input type="number" class="input form__input">
 							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Высота, см</label>
-								<input type="text" class="input form__input">
+								<input type="number" class="input form__input">
 							</div>
 						</div>
 						<div class="form__row form__row-checkbox">
@@ -153,7 +153,7 @@
 			</div>
 		</section>
 		<!-- /.section catalog -->
-		<section class="section catalog">
+		<section class="section catalog" id="catalog">
 			<div class="container">
 				<h2 class="section-title section__title">Каталог скинали</h2>
 				<div class="catalog-block">
@@ -238,7 +238,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.section catalog -->
-		<section class="section blog">
+		<section class="section blog" id="section blog">
 			<div class="container">
 				<div class="blog__heading">
 					<h3 class="blog__title">Полезное или что важно знать о скинали...</h3>
@@ -284,7 +284,7 @@
 		</section>
 		<!-- /.section blog-list -->
 		
-		<section class="section price">
+		<section class="section price" id="price">
 			<div class="container">
 				<h2 class="section-title section__title">ЦЕНЫ И ВИДЫ скинали</h2>
 				<!-- /.section-title section__title -->
@@ -445,7 +445,7 @@
 
 
 
-		<section class="section before">
+		<section class="section before" id="section-blog">
 			<div class="container">
 				<h2 class="section-title section__title">До и после</h2>
 				<div class="before-slider-wrap">
@@ -525,7 +525,7 @@
 		</section>
 		<!-- /.section reviews -->
 		<!-- /.section steps -->
-		<section class="offer">
+		<section class="offer" id="offersecondary">
 			<div class="container">
 				<div class="offer__block offer-block offer-block__price-bg">
 					<h2 class="offer__title">ИЩИТЕ ГДЕ ДЕШЕВЛЕ И ЛУЧШЕ?</h2>
@@ -537,10 +537,10 @@
 								<input type="text" class="input form__input" placeholder="Ваше имя">
 							</div>
 							<div class="form__group">
-								<input type="text" class="input form__input" placeholder="Ваш телефон">
+								<input type="tel" class="input form__input" placeholder="Ваш телефон">
 							</div>
 							<div class="form__group">
-								<input type="text" class="input form__input" placeholder="Ваша цена">
+								<input type="number" class="input form__input" placeholder="Ваша цена">
 							</div>
 						</div>
 						<div class="form__row">
@@ -558,7 +558,7 @@
 			<!-- /.container -->
 		</section>
 
-		<section class="section factory">
+		<section class="section factory" id="factory">
 			<div class="container">
 				<h2 class="section-title section__title">
 					о производстве
@@ -625,10 +625,7 @@
 		<!-- /.section contacts -->
 		<div class="map" id="map">
 			<script type="text/javascript" charset="utf-8" async
-				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%
-				3Ae3614ce175b2347758566a23ca1b200aaafe92abd478950c9a940c4c08b06c52&amp;width=100%25&amp;height=410&amp;
-				lang=ru_RU&amp;scroll=false">
-			</script>
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3614ce175b2347758566a23ca1b200aaafe92abd478950c9a940c4c08b06c52&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
 		</div>
 		<section class="section questions">
 			<div class="container">
@@ -686,5 +683,6 @@
 	<script src="js/jquery.twentytwenty.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>

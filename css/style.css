@@ -366,13 +366,14 @@ input[type="checkbox"]:checked + label:before {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 99;
   top: 80px;
   left: 0;
   width: 100%;
   padding: 16px 0;
   background-color: #507fe1;
-  transirion: 0.2s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
   opacity: 0;
@@ -907,7 +908,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .price-card:hover .price-card__button {
-  z-index: 99;
+  z-index: 98;
   bottom: -80px;
 }
 
@@ -1069,6 +1070,14 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 768px) {
+  .before-slider-arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
   .before-slider-arrows {
     display: none;
   }
